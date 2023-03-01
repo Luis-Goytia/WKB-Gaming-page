@@ -9,7 +9,7 @@ We generate experiences from mobile to the metaverse, we have experience working
 # WKB Gaming Page
 
 
-## Objetivos del Proyecto
+## Project Objectives
 
 - Build an App using Vite and React.
 - Renovation of old website
