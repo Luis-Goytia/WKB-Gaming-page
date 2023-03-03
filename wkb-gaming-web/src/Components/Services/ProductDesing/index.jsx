@@ -1,7 +1,7 @@
 import React from 'react';
-import Styles from './Services.module.css'
+import Styles from './ProductDesing.module.css'
 
-export const Services = () => {
+export const ProductDesing = () => {
     return (
         <div>
           Services  
