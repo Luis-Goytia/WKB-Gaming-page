@@ -4,7 +4,7 @@ import { Home } from "./Components/Home";
 import { AppGames } from "./Components/Services/AppGames";
 import { EsportServices } from "./Components/Services/EsportServices";
 import { Marketing } from "./Components/Services/Marketing";
-import { ProductDesing } from "./Components/Services/ProducDesing";
+import { ProductDesing } from "./Components/Services/ProductDesing";
 
 function App() {
   return (
