@@ -4,7 +4,7 @@ import { Home } from "./Components/Home";
 import { AppGames } from "./Components/Services/AppGames";
 import { EsportServices } from "./Components/Services/EsportServices";
 import { Marketing } from "./Components/Services/Marketing";
-import { ProducDesing } from "./Components/Services/ProducDesing";
+import { ProductDesing } from "./Components/Services/ProducDesing";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path="/Services/AppGames" element={<AppGames />} />
         <Route path="/Services/EsportServices" element={<EsportServices />} />
         <Route path="/Services/Marketing" element={<Marketing />} />
-        <Route path="/Services/ProductDesing" element={<ProducDesing />} />
+        <Route path="/Services/ProductDesing" element={<ProductDesing />} />
       </Routes>
     </div>
   );
