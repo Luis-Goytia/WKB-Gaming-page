@@ -1,0 +1,21 @@
+.parnertsList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .parnertsList li {
+    flex-basis: calc(13% - 20px);
+    margin: 15px;
+    list-style: none;
+  }
+  
+  .parnertsList li img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
