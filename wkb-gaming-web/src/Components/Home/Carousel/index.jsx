@@ -56,6 +56,7 @@ export const Carousel = () => {
   };
   return (
     <div>
+      <div><p>Our Projects</p></div>
       <div className={Styles.sliderContainer}>
         <Slider {...settings}>
           <div className={Styles.slide}>
