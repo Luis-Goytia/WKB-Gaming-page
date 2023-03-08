@@ -1,0 +1,12 @@
+.sliderContainer{
+    width: 100%;
+    margin: 0;
+}
+
+.slide{
+    padding: 0 10px;
+}
+.slide img{
+    width: 95%;
+    height:auto;
+}
