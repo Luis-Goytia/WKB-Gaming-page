@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 870px; /* Ancho del componente */
+    margin: 0 auto; /* Centra el componente horizontalmente */
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info p{
+ font-size: 24px;
+}
+
+.subtitle{
+    display: flex;
+    flex-direction:row;
+    align-items: center
+}
+
+.subtitle h5{
+    color: white;
+    font-size: 24px;
+    margin: 5px;
+}
