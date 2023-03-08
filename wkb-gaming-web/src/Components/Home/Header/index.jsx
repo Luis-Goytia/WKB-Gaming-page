@@ -1,22 +1,26 @@
 import React from 'react';
-import Styles from './Header.module.css'
-import Logo from '../../../assets/HOME/WKB LOGOS/Símbolo Walker Bear.svg'
-import {BsChevronDown} from 'react-icons/bs'
+import Styles from './Header.module.css';
+import Logo from '../../../assets/HOME/WKB LOGOS/Símbolo Walker Bear.svg';
+import { BsChevronDown } from 'react-icons/bs';
 import { Slider } from './Slider';
 export const Header = () => {
-    return (
+  return (
+    <div>
+      <div>
+        <img src={Logo} alt="" />
+      </div>
       <div>
         <div>
-          <img src={Logo} alt="" />
+          <p>We make</p>
         </div>
         <div>
-          <div><p>We make</p></div>
-          <div><Slider /></div>
-          <div>for you project</div>
+          <Slider />
         </div>
-        <div>
-            <BsChevronDown/>
-        </div>
-        </div>
-    )
-}
+        <div>for you project</div>
+      </div>
+      <div>
+        <BsChevronDown />
+      </div>
+    </div>
+  );
+};
