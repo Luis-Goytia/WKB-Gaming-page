@@ -16,10 +16,44 @@ export const Footer = () => {
           <div className={Styles.contact}>
             <p>Contact</p>
             <div className={Styles.social}>
-              <AiOutlineMail className={Styles.mail} />
-              <AiOutlineWhatsApp className={Styles.whatsApp} />
-              <AiOutlineInstagram className={Styles.instagram} />
-              <FaLinkedinIn className={Styles.linkedinIn} />
+              <a
+                href="#"
+                onClick={() =>
+                  window.open(
+                    "mailito:hola.wkb@gmail.com",
+                    "_blank",
+                    "width=600,height=400,left=100,top=100"
+                  )
+                }
+              >
+                <AiOutlineMail className={Styles.mail} />
+              </a>
+              <a
+                href="#"
+                onClick={() =>
+                  window.open(
+                    "https://api.whatsapp.com/send/?phone=543875336241&text&type=phone_number&app_absent=0"
+                  )
+                }
+              >
+                <AiOutlineWhatsApp className={Styles.whatsApp} />
+              </a>
+              <a
+                href="#"
+                onClick={() =>
+                  window.open("https://www.instagram.com/wkbgaming/")
+                }
+              >
+                <AiOutlineInstagram className={Styles.instagram} />
+              </a>
+              <a
+                href="#"
+                onClick={() =>
+                  window.open("https://www.linkedin.com/company/wkbgaming/")
+                }
+              >
+                <FaLinkedinIn className={Styles.linkedinIn} />
+              </a>
             </div>
           </div>
         </div>
