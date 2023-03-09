@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 870px; /* Ancho del componente */
+    max-width: 900px; /* Ancho del componente */
     margin: 0 auto; /* Centra el componente horizontalmente */
 }
 .info{
