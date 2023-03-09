@@ -25,7 +25,7 @@ export function Bear(props) {
       ref.current.position,
       {
         duration: 2,
-        y: -FLOOR_HEIGHT * (NB_FLOORS - 1),
+        x: FLOOR_HEIGHT * (NB_FLOORS - 1),
       },
       0
     );
