@@ -1,0 +1,46 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.formField {
+  display: block;
+}
+
+.formField  {
+  border-radius: 5px;
+  border-color: white;
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+  
+}
+
+input:focus {
+  box-shadow: none;
+}
+.namEmail{
+    display: flex;
+    flex-direction: row;
+}
+
+.inputName{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20rem;
+    
+}
+.inputEmail{
+  display: flex;
+  flex-direction: column;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }

@@ -60,32 +60,32 @@ export const Carousel = () => {
       <div className={Styles.sliderContainer}>
         <Slider {...settings}>
           <div className={Styles.slide}>
-            <img src={Coworking} alt="" />
+            <img src={Coworking} alt="Coworking" />
           </div>
           <div className={Styles.slide}>
-            <img src={Lineage} alt="" />
+            <img src={Lineage} alt="Lineage" />
           </div>
           <div className={Styles.slide}>
-            <img src={OnrBranding} alt="" />
+            <img src={OnrBranding} alt="OnrBranding" />
           </div>
           <div className={Styles.slide}>
-            <img src={SaltaGaming} alt="" />
+            <img src={SaltaGaming} alt="SaltaGaming" />
           </div>
         </Slider>
       </div>
       <div style={{ width: "100%" }}>
         <Slider {...settings2}>
           <div className={Styles.slide}>
-            <img src={Arvum} alt="" />
+            <img src={Arvum} alt="Arvum" />
           </div>
           <div className={Styles.slide}>
-            <img src={Caribe} alt="" />
+            <img src={Caribe} alt="Caribe" />
           </div>
           <div className={Styles.slide}>
-            <img src={OnrMarketing} alt="" />
+            <img src={OnrMarketing} alt="OnrMarketing" />
           </div>
           <div className={Styles.slide}>
-            <img src={OnrWebsite} alt="" />
+            <img src={OnrWebsite} alt="OnrWebsite" />
           </div>
         </Slider>
       </div>
