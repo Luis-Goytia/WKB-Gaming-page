@@ -48,18 +48,27 @@ export function Rocks(props) {
         position={[5, 0, 0]}
         scale={[1, 1, 1]}
       />
+      <Text position={[5, 0, 1]} scale={[0.25, 0.25, 0.25]}>
+        Digital Product Design
+      </Text>
       <mesh
         geometry={nodes.Cube002.geometry}
         material={materials['Material.002']}
         position={[10, 0, 0]}
         scale={[1, 1, 1]}
       />
+      <Text position={[10, 0, 1]} scale={[0.25, 0.25, 0.25]}>
+        Marketing & Communication
+      </Text>
       <mesh
         geometry={nodes.Cube003.geometry}
         material={materials['Material.003']}
         position={[15, 0, 0]}
         scale={[1, 1, 1]}
       />
+      <Text position={[15, 0, 1]} scale={[0.25, 0.25, 0.25]}>
+        e-Sports Services
+      </Text>
     </group>
   );
 }

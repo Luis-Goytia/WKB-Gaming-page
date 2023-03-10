@@ -3,6 +3,7 @@ import Styles from './Header.module.css';
 import Logo from '../../../assets/HOME/WKB LOGOS/Símbolo Walker Bear.svg';
 import { BsChevronDown } from 'react-icons/bs';
 import { Slider } from './Slider';
+import World from '../../Experience/World';
 export const Header = () => {
   return (
     <div>
@@ -14,7 +15,7 @@ export const Header = () => {
           <p>We make</p>
         </div>
         <div>
-          <Slider />
+          <World />
         </div>
         <div>for you project</div>
       </div>

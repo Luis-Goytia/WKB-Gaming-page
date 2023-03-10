@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import {
   Box,
   CameraShake,
+  Environment,
   OrbitControls,
   PresentationControls,
   ScrollControls,
@@ -40,18 +41,18 @@ export default function World() {
     <Canvas
       camera={{ fov: 20, position: [0, 0, 0], rotation: [0, 0, 0] }}
       style={{
-        position: 'absolute',
+        position: 'relative',
         top: 0,
         left: 0,
         width: '100%',
         height: '100%',
       }}
     >
-      <color attach="background" args={['#000a07']} />
-      <ambientLight intensity={1.75} />
+      <color attach="background" args={['#000000']} />
+      <ambientLight intensity={1} />
       <pointLight position={[5, 10, 0]} scale={[5, 5, 5]} />
       <fog attach="fog" args={['lightpink', 60, 100]} />
-      <OrbitControls enableZoom={false} />
+      <Environment preset="city" />
       <ScrollControls pages={5} damping={0.25}>
         <Rig />
         <Rocks />
