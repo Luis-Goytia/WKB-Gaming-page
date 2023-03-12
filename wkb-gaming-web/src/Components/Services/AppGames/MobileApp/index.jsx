@@ -1,4 +1,8 @@
 import React from "react";
+import Game1 from '../../../../assets/Services/img/AppGames/'
+import Game2 from '../../../../assets/Services/img/AppGames/'
+import Game3 from '../../../../assets/Services/img/AppGames/'
+import Game4 from '../../../../assets/Services/img/AppGames/'
 
 export const MobileApp = () => {
   return (
