@@ -30,7 +30,6 @@ export default function World() {
   const scroll = useRef(0);
   return (
     <>
-      <h1>WKB GAMING</h1>
       <Canvas
         dpr={[0.5, 15]}
         shadows

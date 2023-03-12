@@ -47,39 +47,43 @@ export function WKBPlanet(props) {
   useFrame(() => (sportref.current.rotation.y += 0.0025));
   useFrame(() => (markref.current.rotation.y += 0.0025));
   return (
-    <group ref={ref} {...props} dispose={null}>
-      <mesh
-        ref={appsref}
-        geometry={nodes.Apps.geometry}
-        material={materials['Apps']}
-        position={[0, 0, 2.75]}
-      />
-      <mesh
-        ref={desref}
-        geometry={nodes.Design.geometry}
-        material={materials['Design']}
-        position={[2.75, 0, 0]}
-      />
-      <mesh
-        ref={sportref}
-        geometry={nodes.eSports.geometry}
-        material={materials['eSports']}
-        position={[0, 0, -2.75]}
-      />
-      <mesh
-        ref={markref}
-        geometry={nodes.Marketing.geometry}
-        material={materials['Marketing']}
-        position={[-2.75, 0, 0]}
-      />
+    <group>
+      <Rig />
 
-      <mesh
-        geometry={nodes.Asteroids.geometry}
-        material={materials['Asteroids']}
-      />
-      <mesh geometry={nodes.Bear.geometry} material={materials['Bear']} />
+      <group ref={ref} {...props} dispose={null}>
+        <mesh
+          ref={appsref}
+          geometry={nodes.Apps.geometry}
+          material={materials['Apps']}
+          position={[0, 0, 2.75]}
+        />
+        <mesh
+          ref={desref}
+          geometry={nodes.Design.geometry}
+          material={materials['Design']}
+          position={[2.75, 0, 0]}
+        />
+        <mesh
+          ref={sportref}
+          geometry={nodes.eSports.geometry}
+          material={materials['eSports']}
+          position={[0, 0, -2.75]}
+        />
+        <mesh
+          ref={markref}
+          geometry={nodes.Marketing.geometry}
+          material={materials['Marketing']}
+          position={[-2.75, 0, 0]}
+        />
 
-      <mesh geometry={nodes.Planet.geometry} material={materials['Planet']} />
+        <mesh
+          geometry={nodes.Asteroids.geometry}
+          material={materials['Asteroids']}
+        />
+        <mesh geometry={nodes.Bear.geometry} material={materials['Bear']} />
+
+        <mesh geometry={nodes.Planet.geometry} material={materials['Planet']} />
+      </group>
     </group>
   );
 }
