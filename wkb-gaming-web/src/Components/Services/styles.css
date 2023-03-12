@@ -1,0 +1,11 @@
+.option {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: rgb(76, 85, 93);
+  }
+  

@@ -5,12 +5,14 @@ import { AppGames } from "./Components/Services/AppGames";
 import { EsportServices } from "./Components/Services/EsportServices";
 import { Marketing } from "./Components/Services/Marketing";
 import { ProductDesing } from "./Components/Services/ProductDesing";
+import { Services } from "./Components/Services";
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Services" element={<Services />} />
         <Route path="/Services/AppGames" element={<AppGames />} />
         <Route path="/Services/EsportServices" element={<EsportServices />} />
         <Route path="/Services/Marketing" element={<Marketing />} />
