@@ -44,7 +44,12 @@ export default function World() {
         <Suspense fallback={null}>
           <WKBPlanet />
         </Suspense>
-        <PerspectiveCamera makeDefault position={[0, 0, 3.5]} fov={60}>
+        <PerspectiveCamera
+          makeDefault
+          position={[0.25, 0, 3.5]}
+          rotation={[0, 0, 0.25]}
+          fov={60}
+        >
           <pointLight intensity={2} position={[-10, -25, -10]} />
           <spotLight
             castShadow
