@@ -1,21 +1,20 @@
 import React from "react";
 
-export const ProductDesing = () => {
+export const WebEcomerce = () => {
   return (
     <div>
       <div>
-        <h1>Product Design/Factory</h1>
+        <h1>Web/Ecommerce Development</h1>
       </div>
       <div>
         <p>
-          We help our clients not only define strategies – but also bring to
-          market products at scale.
+          We help you to became an idea to real app using programming for your
+          project.
         </p>
         <p>
-          WKB’s dedicated development teams build custom web and mobile apps
-          with a focus on speed to market. We are able to deliver your digital
-          product MVP in as little as 2-6 month employing the lean startup
-          approach and agile software development.
+          Ecommerce website design and development services help create an
+          ecommerce solution uniquely tailored to your business in visual
+          design, functionality, and customer experience tricks.
         </p>
       </div>
       <div>
@@ -24,9 +23,21 @@ export const ProductDesing = () => {
         <div>imagen3</div>
         <div>imagen4</div>
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div>
+        <div>
+          <h2>Problem</h2>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2>How is our workflow</h2>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2>Key Benefits</h2>
+        </div>
+      </div>
     </div>
   );
 };

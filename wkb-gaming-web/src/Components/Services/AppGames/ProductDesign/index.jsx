@@ -24,9 +24,21 @@ export const ProductDesing = () => {
         <div>imagen3</div>
         <div>imagen4</div>
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div>
+        <div>
+          <h2>Problem</h2>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2>How is our workflow</h2>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2>Key Benefits</h2>
+        </div>
+      </div>
     </div>
   );
 };
