@@ -1,7 +1,8 @@
 import React from "react";
+import Styles from './Problem.module.css'
 export const Problem = () => {
   return (
-    <div>
+    <div className={Styles.description}>
       <p>
         In the past three years, a million mobile applications have been
         submitted to Apple and Android app stores. This number shows how

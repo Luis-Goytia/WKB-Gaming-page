@@ -6,10 +6,10 @@ import { TfiTimer } from "react-icons/tfi";
 
 export const KeyBenefits = () => {
   return (
-    <div>
-      <div className={Styles.card}>
-        <div>
-          <div className={Styles.icon}>
+    <div className={Styles.container}>
+      <div className={Styles.card1}>
+        <div className={Styles.header}>
+          <div className={Styles.icon1}>
             <AiOutlineEye />
           </div>
           <div className={Styles.title}>
@@ -25,9 +25,9 @@ export const KeyBenefits = () => {
         </div>
       </div>
 
-      <div className={Styles.card}>
-        <div>
-          <div className={Styles.icon}>
+      <div className={Styles.card2}>
+        <div className={Styles.header}>
+          <div className={Styles.icon2}>
             <RiShieldCheckLine />
           </div>
           <div className={Styles.title}>
@@ -45,9 +45,9 @@ export const KeyBenefits = () => {
         </div>
       </div>
 
-      <div className={Styles.card}>
-        <div>
-          <div className={Styles.icon}>
+      <div className={Styles.card3}>
+        <div className={Styles.header}>
+          <div className={Styles.icon1}>
             <RiMoneyDollarCircleLine />
           </div>
           <div className={Styles.title}>
@@ -65,9 +65,9 @@ export const KeyBenefits = () => {
         </div>
       </div>
 
-      <div className={Styles.card}>
-        <div>
-          <div className={Styles.icon}>
+      <div className={Styles.card4}>
+        <div className={Styles.header}>
+          <div className={Styles.icon2}>
             <TfiTimer />
           </div>
           <div className={Styles.title}>

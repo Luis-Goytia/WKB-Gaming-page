@@ -1,12 +1,13 @@
 import React from "react";
 import { BsPersonBoundingBox } from "react-icons/bs";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import Styles from './KeyBenefits.module.css'
 export const KeyBenefits = () => {
   return (
     <div className={Styles.container}>
       <div className={Styles.card1}>
         <div className={Styles.header}>
-          <div className={Styles.icon}>
+          <div className={Styles.icon1}>
             <BsPersonBoundingBox />
           </div>
           <div className={Styles.title}>
@@ -24,7 +25,7 @@ export const KeyBenefits = () => {
       </div>
       <div className={Styles.card2}>
         <div className={Styles.header}>
-          <div className={Styles.icon}>
+          <div className={Styles.icon2}>
             <RiMoneyDollarCircleLine />
           </div>
           <div className={Styles.title}>

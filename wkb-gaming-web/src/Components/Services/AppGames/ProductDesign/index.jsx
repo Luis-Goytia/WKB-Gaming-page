@@ -3,13 +3,17 @@ import Product1 from '../../../../assets/Services/img/AppGames/ProductDesign/Pro
 import Product2 from '../../../../assets/Services/img/AppGames/ProductDesign/Product Design Factory-1-min.png'
 import Product3 from '../../../../assets/Services/img/AppGames/ProductDesign/Product Design Factory-2-min.png'
 import Product4 from '../../../../assets/Services/img/AppGames/ProductDesign/Product Design Factory-3-min.png'
-export const ProductDesing = () => {
+import { Problem } from './Problem'
+import {Workflow} from './Workflow'
+import { KeyBenefits } from "./KeyBenefits";
+import Styles from './ProductDesing.module.css'
+export const ProductDesign = () => {
   return (
-    <div>
-      <div>
+    <div className={Styles.component}>
+      <div className={Styles.component}>
         <h1>Product Design/Factory</h1>
       </div>
-      <div>
+      <div className={Styles.description}>
         <p>
           We help our clients not only define strategies – but also bring to
           market products at scale.
@@ -21,26 +25,30 @@ export const ProductDesing = () => {
           approach and agile software development.
         </p>
       </div>
-      <div>
-        <div><img src={Product1} alt="Product1" /></div>
-        <div><img src={Product2} alt="Product2" /></div>
-        <div><img src={Product3} alt="Product3" /></div>
-        <div><img src={Product4} alt="Product4" /></div>
+      <br />
+      <div className={Styles.list_img}>
+        <div className={Styles.div1}><img src={Product1} alt="Product1" /></div>
+        <div className={Styles.div2}><img src={Product2} alt="Product2" /></div>
+        <div className={Styles.div3}><img src={Product3} alt="Product3" /></div>
+        <div className={Styles.div4}><img src={Product4} alt="Product4" /></div>
       </div>
       <div>
-        <div>
+        <div className={Styles.subtitle}>
           <h2>Problem</h2>
         </div>
+        <Problem/>
       </div>
       <div>
-        <div>
+        <div className={Styles.subtitle}>
           <h2>How is our workflow</h2>
         </div>
+        <Workflow/>
       </div>
       <div>
-        <div>
+        <div className={Styles.subtitle}>
           <h2>Key Benefits</h2>
         </div>
+        <KeyBenefits/>
       </div>
     </div>
   );

@@ -1,28 +1,29 @@
 import React from "react";
+import Styles from './Workflow.module.css'
 export const Workflow = () => {
   return (
     <div>
-      <div>
+      <div className={Styles.subtitle}>
         <h5>1 – Planning and Research</h5>
       </div>
-      <div>
+      <div className={Styles.text7}>
         <p>
           The goal of discovery is to identify the needs of users through valid
           research and set realistic project goals for the strategic roadmap.
         </p>
       </div>
-      <div>
+      <div className={Styles.text7}>
         <p>
           Depending on needs, the project goals might range from building a
           reasonable minimum viable product to building out a full multi-faceted
           mobile platform solution.
         </p>
       </div>
-      <div>
-        <div>
+      <div >
+        <div className={Styles.subtitle}>
           <h5>2 – Prototyping</h5>
         </div>
-        <div>
+        <div className={Styles.text7}>
           <p>
             Prototyping is the stage where you start rapidly producing
             wireframes and iterating on user feedback. A wireframe can be
@@ -33,10 +34,10 @@ export const Workflow = () => {
         </div>
       </div>
       <div>
-        <div>
+        <div className={Styles.subtitle}>
           <h5>3 – Design & User Experience</h5>
         </div>
-        <div>
+        <div className={Styles.text7}>
           <p>
             User experience design is, probably, the most exciting part of the
             mobile application development lifecycle because it gives you the
@@ -47,10 +48,10 @@ export const Workflow = () => {
         </div>
       </div>
       <div>
-        <div>
+        <div className={Styles.subtitle}>
           <h5>4 – Development</h5>
         </div>
-        <div>
+        <div className={Styles.text7}>
           <p>
             Agile development methodology is an industry-standard and
             time-proven approach in software development. Before we start
@@ -62,24 +63,24 @@ export const Workflow = () => {
         </div>
       </div>
       <div>
-        <div>
+        <div className={Styles.subtitle}>
           <h5>5 – Testing and launch</h5>
         </div>
-        <div>
+        <div className={Styles.text1}>
           <p>
             There are functional and performance tests that help ensure
             everything works as it should, the app is fast and can handle the
             load.
           </p>
         </div>
-        <div>
+        <div className={Styles.text1}>
           <p>
             For a consumer-focused application, you may need to have a web
             landing that promotes the application and provides links to the
             stores where the app is published.
           </p>
         </div>
-        <div>
+        <div className={Styles.text1}>
           <p>
             After all the key stages of mobile developing, an app goes to
             stores, and you get first reviews and installation statistics. It
