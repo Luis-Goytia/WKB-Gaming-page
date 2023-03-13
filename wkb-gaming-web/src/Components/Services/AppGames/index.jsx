@@ -1,10 +1,14 @@
 import React from 'react';
+import {Game} from './Game'
 import Styles from './AppGames.module.css'
 
 export const AppGames = () => {
     return (
         <div>
-          AppGames 
+            <div></div>
+            <div>
+                <Game/>
+            </div>
         </div>
     )
 }

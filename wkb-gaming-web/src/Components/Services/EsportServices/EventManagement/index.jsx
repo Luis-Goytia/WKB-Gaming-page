@@ -1,10 +1,9 @@
 import React from "react";
-import Game1 from '../../../../assets/Services/img/AppGames/'
-import Game2 from '../../../../assets/Services/img/AppGames/'
-import Game3 from '../../../../assets/Services/img/AppGames/'
-import Game4 from '../../../../assets/Services/img/AppGames/'
-
-export const MobileApp = () => {
+import Event1 from "../../../../assets/Services/img/EsportServices/EventManagement/Event Management-min.png";
+import Event2 from "../../../../assets/Services/img/EsportServices/EventManagement/Event Management-1-min.png";
+import Event3 from "../../../../assets/Services/img/EsportServices/EventManagement/Event Management-2-min.png";
+import Event4 from "../../../../assets/Services/img/EsportServices/EventManagement/Event Management-3-min.png";
+export const EventManagement = () => {
   return (
     <div>
       <div>
@@ -22,10 +21,18 @@ export const MobileApp = () => {
         </p>
       </div>
       <div>
-        <div>imagen1</div>
-        <div>imagen2</div>
-        <div>imagen3</div>
-        <div>imagen4</div>
+        <div>
+          <img src={Event1} alt="Event1" />
+        </div>
+        <div>
+          <img src={Event2} alt="Event2" />
+        </div>
+        <div>
+          <img src={Event3} alt="Event3" />
+        </div>
+        <div>
+          <img src={Event4} alt="Event4" />
+        </div>
       </div>
       <div>
         <div>

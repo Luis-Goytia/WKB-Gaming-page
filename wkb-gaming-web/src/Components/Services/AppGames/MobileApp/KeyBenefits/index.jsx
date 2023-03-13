@@ -3,9 +3,9 @@ import { BsPersonBoundingBox } from "react-icons/bs";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 export const KeyBenefits = () => {
   return (
-    <div>
-      <div className={Styles.card}>
-        <div>
+    <div className={Styles.container}>
+      <div className={Styles.card1}>
+        <div className={Styles.header}>
           <div className={Styles.icon}>
             <BsPersonBoundingBox />
           </div>
@@ -22,8 +22,8 @@ export const KeyBenefits = () => {
           </p>
         </div>
       </div>
-      <div className={Styles.card}>
-        <div>
+      <div className={Styles.card2}>
+        <div className={Styles.header}>
           <div className={Styles.icon}>
             <RiMoneyDollarCircleLine />
           </div>

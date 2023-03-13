@@ -1,12 +1,13 @@
 import React from "react";
+import Styles from './Workflow.module.css'
 export const Workflow = () => {
   return (
     <div>
       <div>
-        <div>
+        <div  className={Styles.subtitle}>
           <h5>1 – Pre-production</h5>
         </div>
-        <div>
+        <div className={Styles.text1}>
           <p>
             It is vital to start the computer game development process by
             collecting information about a future product, such as technical
@@ -14,27 +15,27 @@ export const Workflow = () => {
             and business of the project and map out the core concept behind it.
           </p>
         </div>
-        <div>
+        <div className={Styles.text2}>
           <p>
             Market and competitor analysis. It is necessary to determine what is
             now at peak popularity in the gaming industry and brings the most
             significant profit.
           </p>
         </div>
-        <div>
+        <div className={Styles.text2}>
           <p>
             The target audience. It is important to determine who will be
             interested in your product to advance the game’s development
             according to their preferences.
           </p>
         </div>
-        <div>
+        <div className={Styles.text3}>
           <p>
             Choosing a platform. The choice of a platform is usually based on
             the popularity of use, as well as the company’s coding capabilities.
           </p>
         </div>
-        <div>
+        <div className={Styles.text2}>
           <p>
             Allocation of resources. It is necessary to establish the number of
             required specialists, equipment, as well as the video game
@@ -42,25 +43,25 @@ export const Workflow = () => {
             of a project.
           </p>
         </div>
-        <div>
+        <div className={Styles.text4}>
           <p>
             Concept art. Concept artists design characters, environments, props,
             and other game assets.
           </p>
         </div>
-        <div>
+        <div className={Styles.text5}>
           <p>
             Type of monetization. Make money from ads, in-game purchases, or
             sell a product at a fixed cost?
           </p>
         </div>
-        <div>
+        <div className={Styles.text6}>
           <p>
             Risk analysis. It involves calculating all possible risks in advance
             and determining the methods of damage mitigation.
           </p>
         </div>
-        <div>
+        <div className={Styles.text7}>
           <p>
             Marketing strategy. It is necessary to think about how to make the
             game appeal to as many users as possible.Depending on needs, the
@@ -71,17 +72,18 @@ export const Workflow = () => {
         </div>
       </div>
       <div>
-        <div>
+        <div className={Styles.subtitle}>
           <h5>2 – Pre-production & Production</h5>
         </div>
-        <div>
+        <div className={Styles.text3}>
           <p>
             The production stage is the longest and most labor-intensive phase
             of a video game production pipeline, divided into several internal
             stages.
           </p>
         </div>
-        <div>
+        
+        <div className={Styles.text7}>
           <p>
             Prototype characters, environments, interfaces, control schemes, and
             other in-game elements to see how they look, feel, and interact with
@@ -90,51 +92,57 @@ export const Workflow = () => {
             – production.
           </p>
         </div>
-        <div className={Style.frame}>
+        <br />
+        <div className={Styles.frame}>
           <p>
-            Character models are designed, rendered, and iterated on to look
+          &middot; Character models are designed, rendered, and iterated on to look
             exactly how they should in the story.
           </p>
         </div>
-        <div className={Style.frame}>
+        <br />
+        <div className={Styles.frame}>
           <p>
-            Audio design works tirelessly to ensure every time your character
+          &middot; Audio design works tirelessly to ensure every time your character
             steps onto sand, gravel, or cement, it sounds authentic.
           </p>
         </div>
-        <div className={Style.frame}>
+        <br />
+        <div className={Styles.frame}>
           <p>
-            Level designers craft environments that are dynamic, immersive, and
+          &middot; Level designers craft environments that are dynamic, immersive, and
             suitable for many types of playstyles.
           </p>
         </div>
-        <div className={Style.frame}>
+        <br />
+        <div className={Styles.frame}>
           <p>
-            Voice actors read large stacks of scripts, doing take after take to
+          &middot; Voice actors read large stacks of scripts, doing take after take to
             get the right emotion, timing, and tone.
           </p>
         </div>
-        <div className={Style.frame}>
+        <br />
+        <div className={Styles.frame}>
           <p>
-            Developers write thousands-of-lines-of-source code to bring each
+          &middot; Developers write thousands-of-lines-of-source code to bring each
             piece of in-game content to life.
           </p>
         </div>
-        <div className={Style.frame}>
+        <br />
+        <div className={Styles.frame}>
           <p>
-            Project leads establish milestones and sprint schedules, ensuring
+          &middot; Project leads establish milestones and sprint schedules, ensuring
             each department and its team members are held accountable. This is
             especially important if a publisher regularly checks in for status
             updates.
           </p>
         </div>
       </div>
-
+      <br />
       <div>
-        <div>
+        <div className={Styles.subtitle}>
           <h5>3 – Testing</h5>
         </div>
-        <div>
+        <div className={Styles.text8}>
           <p>
             Every feature and mechanic in the game needs to be tested for
             quality control. A game that hasn’t been thoroughly tested is a game
@@ -142,30 +150,37 @@ export const Workflow = () => {
             playtester may point out during this stage:
           </p>
         </div>
-        <div className={Style.frame}>
+        <br />
+        <div className={Styles.frame}>
           <p>Are there buggy areas or levels?</p>
         </div>
-        <div className={Style.frame}>
+        <br />
+        <div className={Styles.frame}>
           <p>Is everything rendering on the screen?</p>
         </div>
-        <div className={Style.frame}>
+        <br />
+        <div className={Styles.frame}>
           <p>Can I walk through this wall or a locked environment?</p>
         </div>
-        <div className={Style.frame}>
+        <br />
+        <div className={Styles.frame}>
           <p>Are there features I can use to exploit the game?</p>
         </div>
-        <div className={Style.frame}>
+        <br />
+        <div className={Styles.frame}>
           <p>Does my character get permanently stuck in this spot?</p>
         </div>
-        <div className={Style.frame}>
+        <br />
+        <div className={Styles.frame}>
           <p>Is the character dialogue stale and boring?</p>
         </div>
+        <br />
       </div>
       <div>
-        <div>
-          <h5>4 – Launch</h5>
-        </div>
-        <div>
+        <div className={Styles.subtitle}>
+          <h5 >4 – Launch</h5>
+        </div >
+        <div className={Styles.text8}>
           <p>
             The product launch is the final game development phase, which
             everyone eagerly awaits. But launch is not the end of the story.
@@ -177,11 +192,11 @@ export const Workflow = () => {
           </p>
         </div>
       </div>
-      <div>
-        <div>
+      <div >
+        <div className={Styles.subtitle}>
           <h5>5 – Post-production</h5>
         </div>
-        <div>
+        <div className={Styles.text7}>
           <p>
             After a game is launched to the market, fixes and improvements
             require constant monitoring to double-check the level of stability
@@ -190,7 +205,7 @@ export const Workflow = () => {
             updated.
           </p>
         </div>
-        <div>
+        <div className={Styles.text1}>
           <p>
             Also, many companies update in-game content and sometimes add
             exciting new mechanics to keep users engaged in a game. All this

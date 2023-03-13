@@ -1,31 +1,35 @@
 import React from "react";
-import Game1 from '../../../../assets/Services/img/AppGames/'
-import Game2 from '../../../../assets/Services/img/AppGames/'
-import Game3 from '../../../../assets/Services/img/AppGames/'
-import Game4 from '../../../../assets/Services/img/AppGames/'
+import Digital1 from "../../../../assets/Services/img/EsportServices/EsportDigital/Esports Digital Marketing-min.png";
+import Digital2 from "../../../../assets/Services/img/EsportServices/EsportDigital/Esports Digital Marketing-1-min.png";
+import Digital3 from "../../../../assets/Services/img/EsportServices/EsportDigital/Esports Digital Marketing-2-min.png";
+import Digital4 from "../../../../assets/Services/img/EsportServices/EsportDigital/Esports Digital Marketing-3-min.png";
 
-export const MobileApp = () => {
+export const EsportDigital = () => {
   return (
     <div>
       <div>
-        <h1>Mobile App Development</h1>
+        <h1>Esports Digital Marketing</h1>
       </div>
       <div>
+        <p>Uncover The Key to Creating a Winning Esports Marketing Strategy</p>
         <p>
-          We help you to became an idea to real app using programming for your
-          project.
-        </p>
-        <p>
-          We set up the development process from scratch and take full
-          responsibility for the project risks: from timelines and budget to the
-          final software quality.
+          Demolish the competition and catapult your esports business to the top
+          with our comprehensive promotion services.
         </p>
       </div>
       <div>
-        <div>imagen1</div>
-        <div>imagen2</div>
-        <div>imagen3</div>
-        <div>imagen4</div>
+        <div>
+          <img src={Digital1} alt="Digital1" />
+        </div>
+        <div>
+          <img src={Digital2} alt="Digital2" />
+        </div>
+        <div>
+          <img src={Digital3} alt="Digital3" />
+        </div>
+        <div>
+          <img src={Digital4} alt="Digital4" />
+        </div>
       </div>
       <div>
         <div>

@@ -1,5 +1,8 @@
 import React from "react";
-
+import Product1 from '../../../../assets/Services/img/AppGames/ProductDesign/Product Design Factory-min.png'
+import Product2 from '../../../../assets/Services/img/AppGames/ProductDesign/Product Design Factory-1-min.png'
+import Product3 from '../../../../assets/Services/img/AppGames/ProductDesign/Product Design Factory-2-min.png'
+import Product4 from '../../../../assets/Services/img/AppGames/ProductDesign/Product Design Factory-3-min.png'
 export const ProductDesing = () => {
   return (
     <div>
@@ -19,10 +22,10 @@ export const ProductDesing = () => {
         </p>
       </div>
       <div>
-        <div>imagen1</div>
-        <div>imagen2</div>
-        <div>imagen3</div>
-        <div>imagen4</div>
+        <div><img src={Product1} alt="Product1" /></div>
+        <div><img src={Product2} alt="Product2" /></div>
+        <div><img src={Product3} alt="Product3" /></div>
+        <div><img src={Product4} alt="Product4" /></div>
       </div>
       <div>
         <div>

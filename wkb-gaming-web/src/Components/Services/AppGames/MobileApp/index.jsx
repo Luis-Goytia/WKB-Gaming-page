@@ -1,8 +1,8 @@
 import React from "react";
-import Game1 from '../../../../assets/Services/img/AppGames/'
-import Game2 from '../../../../assets/Services/img/AppGames/'
-import Game3 from '../../../../assets/Services/img/AppGames/'
-import Game4 from '../../../../assets/Services/img/AppGames/'
+import Mobile1 from '../../../../assets/Services/img/AppGames/MobileApp/Mobile App Development-min.png'
+import Mobile2 from '../../../../assets/Services/img/AppGames/MobileApp/Mobile App Development-1-min.png'
+import Mobile3 from '../../../../assets/Services/img/AppGames/MobileApp/Mobile App Development-2-min.png'
+import Mobile4 from '../../../../assets/Services/img/AppGames/MobileApp/Mobile App Development-3-min.png'
 
 export const MobileApp = () => {
   return (
@@ -22,10 +22,10 @@ export const MobileApp = () => {
         </p>
       </div>
       <div>
-        <div>imagen1</div>
-        <div>imagen2</div>
-        <div>imagen3</div>
-        <div>imagen4</div>
+        <div><img src={Mobile1} alt="Mobile1" /></div>
+        <div><img src={Mobile2} alt="Mobile2" /></div>
+        <div><img src={Mobile3} alt="Mobile3" /></div>
+        <div><img src={Mobile4} alt="Mobile4" /></div>
       </div>
       <div>
         <div>

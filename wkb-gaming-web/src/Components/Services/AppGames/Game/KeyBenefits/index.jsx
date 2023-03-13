@@ -2,12 +2,13 @@ import React from "react";
 import { TbAtom } from "react-icons/tb";
 import { MdMoreTime } from "react-icons/md";
 import { BiWallet } from "react-icons/bi";
+import Styles from './KeyBenefits.module.css'
 export const KeyBenefits = () => {
   return (
-    <div>
-      <div className={Styles.card}>
-        <div>
-          <div className={Styles.icon}>
+    <div className={Styles.container}>
+      <div className={Styles.card1}>
+        <div className={Styles.header}>
+          <div className={Styles.icon1}>
             <TbAtom />
           </div>
           <div className={Styles.title}>
@@ -22,9 +23,10 @@ export const KeyBenefits = () => {
             without sacrificing a large percentage of your operating Budget
           </p>
         </div>
-        <div className={Styles.card}>
-          <div>
-            <div className={Styles.icon}>
+        </div>
+        <div className={Styles.card2}>
+          <div className={Styles.header}>
+            <div className={Styles.icon2}>
               <BiWallet />
             </div>
             <div className={Styles.title}>
@@ -42,10 +44,10 @@ export const KeyBenefits = () => {
               your overhead costs and administrative hassles.
             </p>
           </div>
-        </div>
-        <div className={Styles.card}>
-          <div>
-            <div className={Styles.icon}>
+          </div>
+        <div className={Styles.card3}>
+          <div className={Styles.header}>
+            <div className={Styles.icon1}>
               <MdMoreTime />
             </div>
             <div className={Styles.title}>
@@ -62,7 +64,8 @@ export const KeyBenefits = () => {
               of your business. You can promote your business on new channels,
               develop new ideas, and run all the internal administrative tasks.
             </p>
-          </div>
+            
+            
         </div>
       </div>
     </div>

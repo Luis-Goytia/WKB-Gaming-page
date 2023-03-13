@@ -1,8 +1,9 @@
 import React from "react";
-import Consulting1 from "../../../../assets/Services/img/EsportServices/EsportConsulting/Esport Consulting-min.png";
-import Consulting2 from "../../../../assets/Services/img/EsportServices/EsportConsulting/Esport Consulting-1-min.png";
-import Consulting3 from "../../../../assets/Services/img/EsportServices/EsportConsulting/Esport Consulting-2-min.png";
-import Consulting4 from "../../../../assets/Services/img/EsportServices/EsportConsulting/Esport Consulting-3-min.png";
+import Branding1 from '../../../../assets/Services/img/Marketing/Branding/Content Marketing-min.png'
+import Branding2 from '../../../../assets/Services/img/Marketing/Branding/Content Marketing-1-min.png'
+import Branding3 from '../../../../assets/Services/img/Marketing/Branding/Content Marketing-2-min.png'
+import Branding4 from '../../../../assets/Services/img/Marketing/Branding/Content Marketing-3-min.png'
+
 
 export const MobileApp = () => {
   return (
@@ -22,10 +23,18 @@ export const MobileApp = () => {
         </p>
       </div>
       <div>
-        <div><img src={Consulting1} alt="Consulting1" /></div>
-        <div><img src={Consulting2} alt="Consulting2" /></div>
-        <div><img src={Consulting3} alt="Consulting3" /></div>
-        <div><img src={Consulting4} alt="Consulting4" /></div>
+      <div>
+          <img src={Branding1} alt="Branding1" />
+        </div>
+        <div>
+          <img src={Branding2} alt="Branding2" />
+        </div>
+        <div>
+          <img src={Branding3} alt="Branding3" />
+        </div>
+        <div>
+          <img src={Branding4} alt="Branding4" />
+        </div>
       </div>
       <div>
         <div>

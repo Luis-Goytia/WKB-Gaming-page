@@ -1,10 +1,10 @@
 import React from "react";
-import Club1 from "../../../../assets/Services/img/EsportServices/ClubEsport/Club Esport Development-min.png";
-import Club2 from "../../../../assets/Services/img/EsportServices/ClubEsport/Club Esport Development-1-min.png";
-import Club3 from "../../../../assets/Services/img/EsportServices/ClubEsport/Club Esport Development-2-min.png";
-import Club4 from "../../../../assets/Services/img/EsportServices/ClubEsport/Club Esport Development-4-min.png";
+import Business1 from "../../../../assets/Services/img/ProductDesing/Business/Business Digitalitation-min.png";
+import Business2 from "../../../../assets/Services/img/ProductDesing/Business/Business Digitalitation-1-min.png";
+import Business3 from "../../../../assets/Services/img/ProductDesing/Business/Business Digitalitation-2-min.png";
+import Business4 from "../../../../assets/Services/img/ProductDesing/Business/Business Digitalitation-3-min.png";
 
-export const MobileApp = () => {
+export const Business = () => {
   return (
     <div>
       <div>
@@ -23,16 +23,16 @@ export const MobileApp = () => {
       </div>
       <div>
         <div>
-          <img src={Club1} alt="Club1" />
+          <img src={Business1} alt="Business1" />
         </div>
         <div>
-          <img src={Club2} alt="Club2" />
+          <img src={Business2} alt="Business2" />
         </div>
         <div>
-          <img src={Club3} alt="Club3" />
+          <img src={Business3} alt="Business3" />
         </div>
         <div>
-          <img src={Club4} alt="Club4" />
+          <img src={Business4} alt="Business4" />
         </div>
       </div>
       <div>
