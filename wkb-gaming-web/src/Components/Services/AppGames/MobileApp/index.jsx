@@ -10,7 +10,7 @@ import Styles from './MobileApp.module.css'
 export const MobileApp = () => {
   return (
     <div className={Styles.component}>
-      <div className={Styles.component}>
+      <div className={Styles.subtitle}>
         <h1>Mobile App Development</h1>
       </div>
       <div className={Styles.description}>

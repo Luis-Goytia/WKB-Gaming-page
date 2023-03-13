@@ -10,7 +10,7 @@ import Styles from "./ProductDesing.module.css";
 export const ProductDesign = () => {
   return (
     <div className={Styles.component}>
-      <div className={Styles.component}>
+      <div className={Styles.subtitle}>
         <h1>Product Design/Factory</h1>
       </div>
       <div className={Styles.description}>

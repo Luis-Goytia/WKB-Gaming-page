@@ -1,7 +1,8 @@
 import React from "react";
+import Styles from './Problem.module.css'
 export const Problem = () => {
   return (
-    <div>
+    <div className={Styles.description}>
       <div>
         <p>
           In the age of interconnectivity, web development services are
