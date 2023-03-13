@@ -2,6 +2,7 @@ import React from "react";
 import { TbAtom } from "react-icons/tb";
 import { MdMoreTime } from "react-icons/md";
 import { BiWallet } from "react-icons/bi";
+
 import Styles from './KeyBenefits.module.css'
 export const KeyBenefits = () => {
   return (

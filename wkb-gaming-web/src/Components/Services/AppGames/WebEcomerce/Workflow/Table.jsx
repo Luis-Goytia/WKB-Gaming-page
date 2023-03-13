@@ -1,8 +1,8 @@
 import React from "react";
-
+import Styles from './Table.module.css'
 export const Table = () => {
   return (
-    <table>
+    <table >
       <thead>
         <tr>
           <th>Elements</th>

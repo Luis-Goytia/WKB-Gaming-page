@@ -3,6 +3,7 @@ import Slider from 'react-slick'
 import { Game } from './Game'
 import { MobileApp } from './MobileApp'
 import { ProductDesign } from './ProductDesign'
+import { WebEcomerce } from './WebEcomerce'
 import Styles from './AppGames.module.css'
 
 export const AppGames = () => {
@@ -20,24 +21,20 @@ export const AppGames = () => {
             <div>
         <h2>Adaptive height</h2>
         <Slider {...settings}>
-          <div>
-            <Game/>
+            <div>
+            <ProductDesign/>
+            
           </div>
           <div>
             <MobileApp/>
           </div>
           <div>
-            <ProductDesign/>
+          <WebEcomerce/>
           </div>
           <div>
-            <h3>4</h3>
+          <Game/>
           </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
+          
         </Slider>
       </div>
         </div>

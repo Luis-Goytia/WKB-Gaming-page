@@ -1,13 +1,14 @@
 import React from "react";
 import { RiShieldCheckLine, RiMoneyDollarCircleLine } from "react-icons/ri";
-import { HiArrowTrendingUp } from "react-icons/gr";
-import { GrDiamond } from "react-icons/gr";
+import { HiArrowTrendingUp } from "react-icons/hi2";
+import { SlDiamond } from "react-icons/sl";
+import Styles from './KeyBenefits.module.css'
 export const KeyBenefits = () => {
   return (
-    <div>
-      <div className={Styles.card}>
-        <div>
-          <div className={Styles.icon}>
+    <div className={Styles.container}>
+      <div className={Styles.card1}>
+        <div className={Styles.header}>
+          <div className={Styles.icon1}>
             <RiShieldCheckLine />
           </div>
           <div className={Styles.title}>
@@ -24,9 +25,9 @@ export const KeyBenefits = () => {
           </p>
         </div>
       </div>
-      <div className={Styles.card}>
-        <div>
-          <div className={Styles.icon}>
+      <div className={Styles.card2}>
+        <div className={Styles.header}>
+          <div className={Styles.icon2}>
             <RiMoneyDollarCircleLine />
           </div>
           <div className={Styles.title}>
@@ -43,10 +44,10 @@ export const KeyBenefits = () => {
           </p>
         </div>
       </div>
-      <div className={Styles.card}>
-        <div>
-          <div className={Styles.icon}>
-            <GrDiamond />
+      <div className={Styles.card3}>
+        <div className={Styles.header}>
+          <div className={Styles.icon1}>
+            <SlDiamond />
           </div>
           <div className={Styles.title}>
             <h5>Best First Impression</h5>
@@ -60,9 +61,9 @@ export const KeyBenefits = () => {
           </p>
         </div>
       </div>
-      <div className={Styles.card}>
-        <div>
-          <div className={Styles.icon}>
+      <div className={Styles.card4}>
+        <div className={Styles.header}>
+          <div className={Styles.icon2}>
             <HiArrowTrendingUp />
           </div>
           <div className={Styles.title}>

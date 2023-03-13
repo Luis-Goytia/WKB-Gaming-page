@@ -10,7 +10,7 @@ import Styles from './Game.module.css'
 export const Game = () => {
   return (
     <div className={Styles.component}>
-      <div className={Styles.component}>
+      <div className={Styles.subtitle}>
         <h1>Game Development</h1>
       </div >
       <br />
@@ -37,6 +37,7 @@ export const Game = () => {
           <img src={Game4} alt="Game4" />
         </div>
       </div>
+      <br />
       <div>
         <div className={Styles.subtitle}>
           <h2 >Problem</h2>
