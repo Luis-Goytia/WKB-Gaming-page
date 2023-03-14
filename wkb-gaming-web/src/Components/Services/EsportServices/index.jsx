@@ -1,5 +1,6 @@
 import React from 'react';
 import Styles from './EsportServices.module.css'
+import Slider from 'react-slick'
 import { ClubEsport } from './ClubEsport'
 import { EsportConsulting } from './EsportConsulting'
 import { EsportDigital } from './EsportDigital'

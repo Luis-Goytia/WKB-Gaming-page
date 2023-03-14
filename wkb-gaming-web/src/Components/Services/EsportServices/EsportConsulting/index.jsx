@@ -4,7 +4,7 @@ import Consulting2 from "../../../../assets/Services/img/EsportServices/EsportCo
 import Consulting3 from "../../../../assets/Services/img/EsportServices/EsportConsulting/Esport Consulting-2-min.png";
 import Consulting4 from "../../../../assets/Services/img/EsportServices/EsportConsulting/Esport Consulting-3-min.png";
 
-export const MobileApp = () => {
+export const EsportConsulting = () => {
   return (
     <div>
       <div>
