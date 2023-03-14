@@ -1,10 +1,9 @@
-import React from 'react';
-import Styles from './Marketing.module.css'
+import React from "react";
 
-export const Marketing = () => {
-    return (
-        <div>
-          Marketing  
-        </div>
-    )
-}
+export const Marketing= () => {
+  return (
+    <div>
+      
+    </div>
+  );
+};

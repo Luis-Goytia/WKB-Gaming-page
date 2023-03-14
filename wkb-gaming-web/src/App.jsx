@@ -6,6 +6,7 @@ import { EsportServices } from './Components/Services/EsportServices';
 import { Marketing } from './Components/Services/Marketing';
 import { ProductDesing } from './Components/Services/ProductDesing';
 import World from './Components/Experience/World';
+import { Services } from "./Components/Services";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/Experience" element={<World />} />
         <Route path="/" element={<Home />} />
+        <Route path="/Services" element={<Services />} />
         <Route path="/Services/AppGames" element={<AppGames />} />
         <Route path="/Services/EsportServices" element={<EsportServices />} />
         <Route path="/Services/Marketing" element={<Marketing />} />
