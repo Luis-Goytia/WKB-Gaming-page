@@ -42,13 +42,14 @@ export const ClubEsport = () => {
         <div className={Styles.subtitle}>
           <h2>How is our workflow</h2>
         </div>
-        <Workflow />
+        <Workflow/>
       </div>
       <div>
         <div className={Styles.subtitle}>
           <h2>Key Benefits</h2>
         </div>
         <KeyBenefits />
+        
       </div>
     </div>
   );

@@ -1,7 +1,8 @@
 import React from "react";
 import Styles from './Workflow.module.css'
 export const Workflow = () => {
-  <div>
+
+  return(<div>
     <div className={Styles.subtitle}>
       <h5>Step 1: Know Why Your Club Exists</h5>
     </div>
@@ -67,5 +68,6 @@ export const Workflow = () => {
         effectively engage with your club members.
       </p>
     </div>
-  </div>;
+  </div>)
+  
 };
