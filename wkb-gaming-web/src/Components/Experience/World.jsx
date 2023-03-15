@@ -20,16 +20,21 @@ import { Rocks } from "./Rocks";
 import Camera from "./Camera";
 import Pyramid from "./Pyramid";
 import { Suspense, useRef, useState } from "react";
+import "./World.module.css";
 import { WKBPlanet } from "./WKBPlanet";
 import Godrays from "./Godrays";
+
+
 export default function World() {
   return (
     <>
+    
       <Canvas
         dpr={[1.5, 5]}
         linear
         shadows
         camera={{ position: [0, 0, 3.25], rotation: [5, 0, 5], fov: 75 }}
+     
         eventPrefix="client"
       >
         <fog attach="fog" args={["#021129", -1.75, 7]} />

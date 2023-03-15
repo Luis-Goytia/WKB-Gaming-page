@@ -9,7 +9,7 @@ import { SocialMedia } from './SocialMedia';
 export const Marketing = () => {
   var settings = {
     className: 'slider variable-width',
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -37,6 +37,7 @@ export const Marketing = () => {
             <SocialMedia />
           </div>
         </Slider>
+        <br />
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import { Business } from "./Business";
 export const ProductDesing = () => {
   var settings = {
     className: "slider variable-width",
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -35,6 +35,7 @@ export const ProductDesing = () => {
             <StartupManagment />
           </div>
         </Slider>
+      <br />
       </div>
     </div>
   );

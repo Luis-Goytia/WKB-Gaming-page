@@ -8,7 +8,7 @@ import { EventManagement } from './EventManagement';
 export const EsportServices = () => {
   var settings = {
     className: 'slider variable-width',
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -36,6 +36,7 @@ export const EsportServices = () => {
             <EventManagement />
           </div>
         </Slider>
+        <br />
       </div>
     </div>
   );

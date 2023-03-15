@@ -9,7 +9,7 @@ import Styles from "./AppGames.module.css";
 export const AppGames = () => {
   var settings = {
     className: "slider variable-width",
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -37,6 +37,7 @@ export const AppGames = () => {
             <Game />
           </div>
         </Slider>
+        <br />
       </div>
     </div>
   );
