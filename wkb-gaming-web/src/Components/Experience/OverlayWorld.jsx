@@ -1,70 +1,93 @@
-import React, { forwardRef } from 'react';
+import { Scroll, useScroll } from '@react-three/drei';
+import { useFrame } from '@react-three/fiber';
+import { useState } from 'react';
 
-const Overlay = forwardRef(({ caption, scroll }, ref) => (
-  <div
-    ref={ref}
-    onScroll={(e) => {
-      scroll.current =
-        e.target.scrollTop / (e.target.scrollHeight - window.innerHeight);
-      caption.current.innerText = scroll.current.toFixed(2);
-    }}
-    className="scroll"
-  >
-    <div style={{ height: '400vh' }}>
-      <div className="dot">
-        <h1>headset</h1>
-        Virtual reality (VR) is a simulated experience that can be similar to or
-        completely different from the real world.
+const Section = (props) => {
+  return (
+    <section
+      className={`h-screen flex flex-col justify-center p-10 ${
+        props.right ? 'items-end' : 'items-start'
+      }`}
+      style={{
+        opacity: props.opacity,
+      }}
+    >
+      <div className="w-1/2 flex items-center justify-center">
+        <div className="max-w-sm w-full">
+          <div className="bg-white  rounded-lg px-8 py-12">
+            {props.children}
+          </div>
+        </div>
       </div>
-    </div>
-    <div style={{ height: '200vh' }}>
-      <div className="dot">
-        <h1>headphone</h1>
-        Headphones are a pair of small loudspeaker drivers worn on or around the
-        head over a user's ears.
-      </div>
-    </div>
-    <div style={{ height: '200vh' }}>
-      <div className="dot">
-        <h1>rocket</h1>A rocket (from Italian: rocchetto,
-        lit. 'bobbin/spool')[nb 1][1] is a projectile that spacecraft, aircraft
-        or other vehicle use to obtain thrust from a rocket engine.
-      </div>
-    </div>
-    <div style={{ height: '200vh' }}>
-      <div className="dot">
-        <h1>turbine</h1>A turbine (/ˈtɜːrbaɪn/ or /ˈtɜːrbɪn/) (from the Greek
-        τύρβη, tyrbē, or Latin turbo, meaning vortex)[1][2] is a rotary
-        mechanical device that extracts energy from a fluid flow and converts it
-        into useful work.
-      </div>
-    </div>
-    <div style={{ height: '200vh' }}>
-      <div className="dot">
-        <h1>table</h1>A table is an item of furniture with a flat top and one or
-        more legs, used as a surface for working at, eating from or on which to
-        place things.[1][2]
-      </div>
-    </div>
-    <div style={{ height: '200vh' }}>
-      <div className="dot">
-        <h1>laptop</h1>A laptop, laptop computer, or notebook computer is a
-        small, portable personal computer (PC) with a screen and alphanumeric
-        keyboard.
-      </div>
-    </div>
-    <div style={{ height: '200vh' }}>
-      <div className="dot">
-        <h1>zeppelin</h1>A Zeppelin is a type of rigid airship named after the
-        German inventor Count Ferdinand von Zeppelin (German pronunciation:
-        [ˈt͡sɛpəliːn]) who pioneered rigid airship development at the beginning
-        of the 20th century.
-      </div>
-    </div>
-    <span className="caption" ref={caption}>
-      0.00
-    </span>
-  </div>
-));
+    </section>
+  );
+};
 
-export default Overlay;
+export const Overlay = () => {
+  const scroll = useScroll();
+  const [opacityFirstSection, setOpacityFirstSection] = useState(1);
+  const [opacitySecondSection, setOpacitySecondSection] = useState(1);
+  const [opacityLastSection, setOpacityLastSection] = useState(1);
+
+  useFrame(() => {
+    setOpacityFirstSection(1 - scroll.range(0, 1 / 3));
+    setOpacitySecondSection(scroll.curve(1 / 3, 1 / 3));
+    setOpacityLastSection(scroll.range(2 / 3, 1 / 3));
+  });
+
+  return (
+    <Scroll html>
+      <div class="w-screen">
+        <Section opacity={opacityFirstSection}>
+          <h1 className="font-semibold font-serif text-2xl">
+            Hello, I'm Wawa Sensei
+          </h1>
+          <p className="text-gray-500">Welcome to my beautiful portfolio</p>
+          <p className="mt-3">I know:</p>
+          <ul className="leading-9">
+            <li>🧑‍💻 How to code</li>
+            <li>🧑‍🏫 How to learn</li>
+            <li>📦 How to deliver</li>
+          </ul>
+          <p className="animate-bounce  mt-6">↓</p>
+        </Section>
+        <Section right opacity={opacitySecondSection}>
+          <h1 className="font-semibold font-serif text-2xl">
+            Here are my skillsets 🔥
+          </h1>
+          <p className="text-gray-500">PS: I never test</p>
+          <p className="mt-3">
+            <b>Frontend 🚀</b>
+          </p>
+          <ul className="leading-9">
+            <li>ReactJS</li>
+            <li>React Native</li>
+            <li>VueJS</li>
+            <li>Tailwind</li>
+          </ul>
+          <p className="mt-3">
+            <b>Backend 🔬</b>
+          </p>
+          <ul className="leading-9">
+            <li>NodeJS</li>
+            <li>tRPC</li>
+            <li>NestJS</li>
+            <li>PostgreSQL</li>
+          </ul>
+          <p className="animate-bounce  mt-6">↓</p>
+        </Section>
+        <Section opacity={opacityLastSection}>
+          <h1 className="font-semibold font-serif text-2xl">
+            🤙 Call me maybe?
+          </h1>
+          <p className="text-gray-500">
+            I'm very expensive but you won't regret it
+          </p>
+          <p className="mt-6 p-3 bg-slate-200 rounded-lg">
+            📞 <a href="tel:(+42) 4242-4242-424242">(+42) 4242-4242-424242</a>
+          </p>
+        </Section>
+      </div>
+    </Scroll>
+  );
+};

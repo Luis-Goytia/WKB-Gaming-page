@@ -15,16 +15,6 @@ import { useFrame, useThree } from '@react-three/fiber';
 
 export function WKBPlanet(props) {
   const { nodes, materials } = useGLTF('./Models/WKBPlanet.glb');
-  //const appsref = useRef();
-  const desref = useRef();
-  const sportref = useRef();
-  const markref = useRef();
-
-  //useFrame(() => (appsref.current.rotation.y += 0.0025));
-  useFrame(() => (desref.current.rotation.y += 0.0025));
-  useFrame(() => (sportref.current.rotation.y += 0.0025));
-  useFrame(() => (markref.current.rotation.y += 0.0025));
-
   return (
     <group>
       <OrbitControls
@@ -45,10 +35,6 @@ export function WKBPlanet(props) {
         decayRate={0.65} // if decay = true this is the rate at which intensity will reduce at />
       />
       <group {...props} dispose={null}>
-        <Text position={[0, 0, 3.05]} scale={[0.05, 0.05, 0.05]}>
-          Applications
-        </Text>
-
         <mesh
           //ref={appsref}
           geometry={nodes.Apps.geometry}
@@ -56,58 +42,71 @@ export function WKBPlanet(props) {
           position={[0, 0, 2.75]}
         >
           <Html
-            scale={100}
-            rotation={[Math.PI * 0.2, Math.PI * 0, Math.PI * 0]}
+            scale={2}
+            distanceFactor={1}
             transform
             occlude
-            position={[50, 100, 0]}
+            position={[0, 0, 0.25]}
           >
-            <h1>Hola mundastico</h1>
+            <a href="/services/appgames">Applications</a>
           </Html>
         </mesh>
-        <Text
-          position={[3.05, 0, 0]}
-          rotation={[0, Math.PI * 0.5, 0]}
-          scale={[0.05, 0.05, 0.05]}
-        >
-          Product Design
-        </Text>
         <mesh
-          ref={desref}
+          //ref={desref}
           geometry={nodes.Design.geometry}
           material={materials['Design']}
           position={[2.75, 0, 0]}
-        />
-        <Text
-          position={[0, 0, -3.05]}
-          rotation={[0, Math.PI, 0]}
-          scale={[0.05, 0.05, 0.05]}
         >
-          eSports
-        </Text>
+          <Html
+            scale={2}
+            distanceFactor={1}
+            transform
+            occlude
+            position={[0.25, 0, 0]}
+            rotation={[0, Math.PI / 2, 0]}
+          >
+            <a href="/services/ProductDesing">Product Design</a>
+          </Html>
+        </mesh>
         <mesh
-          ref={sportref}
+          //ref={sportref}
           geometry={nodes.eSports.geometry}
           material={materials['eSports']}
           position={[0, 0, -2.75]}
-        />
-        <Text
-          position={[-3.075, 0, 0]}
-          rotation={[0, Math.PI * 1.5, 0]}
-          scale={[0.05, 0.05, 0.05]}
         >
-          Marketing
-        </Text>
+          <Html
+            scale={2}
+            distanceFactor={1}
+            transform
+            occlude
+            position={[0, 0, -0.25]}
+            rotation={[0, -Math.PI / 1, 0]}
+          >
+            <a href="/services/ProductDesing">e-Sports</a>
+          </Html>
+        </mesh>
         <mesh
-          ref={markref}
+          //ref={markref}
           geometry={nodes.Marketing.geometry}
           material={materials['Marketing']}
-          position={[-2.75, 0, 0]}
-        />
+          position={[-2.5, 0, 0]}
+        >
+          <Html
+            scale={2}
+            distanceFactor={1}
+            transform
+            occlude
+            position={[-0.4, 0, 0]}
+            rotation={[0, -Math.PI / 2, 0]}
+          >
+            <a href="/services/ProductDesing">Marketing & Communication</a>
+          </Html>
+        </mesh>
 
         <mesh
           geometry={nodes.Asteroids.geometry}
           material={materials['Asteroids']}
+          scale={0.925}
         />
         <mesh geometry={nodes.Bear.geometry} material={materials['Bear']} />
 

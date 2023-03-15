@@ -22,7 +22,6 @@ import Pyramid from './Pyramid';
 import { Suspense, useRef, useState } from 'react';
 import './World.module.css';
 import { WKBPlanet } from './WKBPlanet';
-import Overlay from './OverlayWorld';
 import Godrays from './Godrays';
 import { Link } from 'react-router-dom';
 
@@ -30,7 +29,6 @@ export default function World() {
   return (
     <>
       <h1>WKB GAMING</h1>
-      <Link to="/Services/AppGames">HOLAAAAA</Link>
       <Canvas
         dpr={[1.5, 5]}
         linear
@@ -53,9 +51,9 @@ export default function World() {
           shadow-mapSize={[1024, 1024]}
           shadow-bias={-0.0001}
         />
-
         <Suspense fallback={null}>
           <Stats />
+
           <Godrays />
           <WKBPlanet contactShadow={{ opacity: 1, blur: 2 }} />
         </Suspense>
