@@ -1,10 +1,10 @@
-import React from 'react';
-import Slider from 'react-slick'
-import { UI_UXDesing } from './UI_UXDesing'
-import { StartupManagment } from './StartupManagment'
-import { ProductInterface } from './ProductInterface'
-import {Business} from './Business'
-export const ProductDesing  = () => {
+import React from "react";
+import Slider from "react-slick";
+import { UI_UXDesing } from "./UI_UXDesing";
+import { StartupManagment } from "./StartupManagment";
+import { ProductInterface } from "./ProductInterface";
+import { Business } from "./Business";
+export const ProductDesing = () => {
   var settings = {
     className: "slider variable-width",
     dots: true,
@@ -23,7 +23,10 @@ export const ProductDesing  = () => {
       <div>
         <Slider {...settings}>
           <div>
-            <Business/>
+            <Business />
+          </div>
+          <div>
+            <UI_UXDesing />
           </div>
           <div>
             <ProductInterface />
@@ -31,11 +34,8 @@ export const ProductDesing  = () => {
           <div>
             <StartupManagment />
           </div>
-          <div>
-            <UI_UXDesing />
-          </div>
         </Slider>
       </div>
     </div>
-    )
-}
+  );
+};
