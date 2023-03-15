@@ -28,9 +28,18 @@
 .linkedin { grid-area: 1 / 4 / 2 / 5; }
 
 .line {
-  position: absolute;
-  width: 100px;
+  
+  max-width: 1500px;
+  width:1200px;
   height: 0px;
   border: 2px solid #ffffff;
   transform: rotate(180deg);
+  margin: 0 auto
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }

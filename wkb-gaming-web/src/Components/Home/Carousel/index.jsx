@@ -59,32 +59,32 @@ export const Carousel = () => {
       <div><p>Our Projects</p></div>
       <div className={Styles.sliderContainer}>
         <Slider {...settings}>
-          <div className={Styles.slide}>
+          <div className={Styles.slides}>
             <img src={Coworking} alt="Coworking" />
           </div>
-          <div className={Styles.slide}>
+          <div className={Styles.slides}>
             <img src={Lineage} alt="Lineage" />
           </div>
-          <div className={Styles.slide}>
+          <div className={Styles.slides}>
             <img src={OnrBranding} alt="OnrBranding" />
           </div>
-          <div className={Styles.slide}>
+          <div className={Styles.slides}>
             <img src={SaltaGaming} alt="SaltaGaming" />
           </div>
         </Slider>
       </div>
-      <div style={{ width: "100%" }}>
+      <div >
         <Slider {...settings2}>
-          <div className={Styles.slide}>
+          <div className={Styles.slides}>
             <img src={Arvum} alt="Arvum" />
           </div>
-          <div className={Styles.slide}>
+          <div className={Styles.slides}>
             <img src={Caribe} alt="Caribe" />
           </div>
-          <div className={Styles.slide}>
+          <div className={Styles.slides}>
             <img src={OnrMarketing} alt="OnrMarketing" />
           </div>
-          <div className={Styles.slide}>
+          <div className={Styles.slides}>
             <img src={OnrWebsite} alt="OnrWebsite" />
           </div>
         </Slider>

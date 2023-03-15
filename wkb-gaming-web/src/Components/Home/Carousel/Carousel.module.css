@@ -1,12 +1,9 @@
 .sliderContainer{
-    width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
-.slide{
-    padding: 0 10px;
-}
-.slide img{
-    width: 95%;
+.slides img{
+    max-width: 95%;
     height:auto;
 }

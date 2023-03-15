@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineArrowUp } from 'react-icons/ai';
-import { BsGraphUpArrow } from 'react-icons/bs';
+import { HiArrowTrendingUp } from 'react-icons/hi2';
 import { BiDna } from 'react-icons/bi';
 
 import Styles from './KeyBenefits.module.css';
@@ -51,7 +51,7 @@ export const KeyBenefits = () => {
       <div className={Styles.card3}>
         <div className={Styles.header}>
           <div className={Styles.icon1}>
-            <BsGraphUpArrow />
+            <HiArrowTrendingUp />
           </div>
           <div className={Styles.title}>
             <h5>Current Trends</h5>
