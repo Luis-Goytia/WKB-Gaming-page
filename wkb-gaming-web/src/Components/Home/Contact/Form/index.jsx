@@ -61,10 +61,9 @@ export const Forms = () => {
               <ErrorMessage name="email" component="div" className={Styles.errorMessage}/>
             </div>
           </div>
-
           <div className={Styles.input}>
             <label htmlFor="message">Your Message</label>
-            <Field className={Styles.formField} as="textarea" id="message" name="message" />
+            <Field className={Styles.formFieldTxt} as="textarea" id="message" name="message" />
             <ErrorMessage name="message" component="div" className={Styles.errorMessage}/>
           </div>
           <button

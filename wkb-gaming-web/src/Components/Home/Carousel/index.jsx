@@ -20,9 +20,10 @@ export const Carousel = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 1500,
+    speed: 1800,
     autoplaySpeed: 2000,
-    margin: "200px",
+    centerMode: true, // Centra las imágenes
+    centerPadding: "10%", 
     responsive: [
       {
         breakpoint: 768,
@@ -41,9 +42,10 @@ export const Carousel = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 1600,
-    autoplaySpeed: 2000,
-    margin: "200px",
+    speed: 1800,
+    autoplaySpeed: 2000,rtl: true,
+    centerMode: true, // Centra las imágenes
+    centerPadding: "10%", 
     responsive: [
       {
         breakpoint: 768,
@@ -56,35 +58,37 @@ export const Carousel = () => {
   };
   return (
     <div>
-      <div><p>Our Projects</p></div>
+      <div className={Styles.info}><p>Our Projects</p></div>
+      <br />
       <div className={Styles.sliderContainer}>
         <Slider {...settings}>
-          <div className={Styles.slides}>
+          <div className={Styles.slides2}>
             <img src={Coworking} alt="Coworking" />
           </div>
-          <div className={Styles.slides}>
+          <div className={Styles.slides2}>
             <img src={Lineage} alt="Lineage" />
           </div>
-          <div className={Styles.slides}>
+          <div className={Styles.slides2}>
             <img src={OnrBranding} alt="OnrBranding" />
           </div>
-          <div className={Styles.slides}>
+          <div className={Styles.slides2}>
             <img src={SaltaGaming} alt="SaltaGaming" />
           </div>
         </Slider>
       </div>
+      <br />
       <div >
         <Slider {...settings2}>
-          <div className={Styles.slides}>
+          <div className={Styles.slides2}>
             <img src={Arvum} alt="Arvum" />
           </div>
-          <div className={Styles.slides}>
+          <div className={Styles.slides2}>
             <img src={Caribe} alt="Caribe" />
           </div>
-          <div className={Styles.slides}>
+          <div className={Styles.slides2}>
             <img src={OnrMarketing} alt="OnrMarketing" />
           </div>
-          <div className={Styles.slides}>
+          <div className={Styles.slides2}>
             <img src={OnrWebsite} alt="OnrWebsite" />
           </div>
         </Slider>

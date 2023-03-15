@@ -22,10 +22,10 @@
   grid-row-gap: 0px;
 }
 
-.mail { grid-area: 1 / 1 / 2 / 2; }
-.whatsapp { grid-area: 1 / 2 / 2 / 3; }
-.instagram { grid-area: 1 / 3 / 2 / 4; }
-.linkedin { grid-area: 1 / 4 / 2 / 5; }
+.mail { color: white;grid-area: 1 / 1 / 2 / 2; }
+.whatsapp { color: white;grid-area: 1 / 2 / 2 / 3; }
+.instagram {color: white; grid-area: 1 / 3 / 2 / 4; }
+.linkedin {color: white; grid-area: 1 / 4 / 2 / 5; }
 
 .line {
   
@@ -41,5 +41,9 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+a{
+  text-decoration: none;
   
 }
