@@ -7,9 +7,9 @@ import World from '../../Experience/World';
 export const Header = () => {
   return (
     <div>
-      <div className="home">
-        <div className={Styles.World}>
-          <World />
+      <div>
+        <div >
+          <World className={Styles.world}/>
         </div>
       </div>
     </div>

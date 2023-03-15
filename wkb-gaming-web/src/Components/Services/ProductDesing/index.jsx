@@ -4,10 +4,12 @@ import { UI_UXDesing } from "./UI_UXDesing";
 import { StartupManagment } from "./StartupManagment";
 import { ProductInterface } from "./ProductInterface";
 import { Business } from "./Business";
+import { Footer } from '../../Home/Footer';
+import {Navbar} from '../../Services/Navbar'
 export const ProductDesing = () => {
   var settings = {
     className: "slider variable-width",
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -15,6 +17,7 @@ export const ProductDesing = () => {
   };
   return (
     <div>
+      <Navbar/>
       <div>
         <h1>Digital Product Design</h1>
       </div>
@@ -35,7 +38,9 @@ export const ProductDesing = () => {
             <StartupManagment />
           </div>
         </Slider>
+      <br />
       </div>
+      <Footer/>
     </div>
   );
 };

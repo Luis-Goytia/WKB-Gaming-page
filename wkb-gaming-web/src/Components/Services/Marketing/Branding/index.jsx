@@ -65,17 +65,17 @@ export const Branding = () => {
       <br />
       <br />
       <div>
-        <div>
+        <div className={Styles.subtitle}>
           <h2>How is our workflow</h2>
         </div>
         <Workflow />
       </div>
       <br />
-      <br />
       <div>
-        <div>
+        <div className={Styles.subtitle}>
           <h2>Key Benefits</h2>
         </div>
+        <br />
         <KeyBenefits />
       </div>
     </div>

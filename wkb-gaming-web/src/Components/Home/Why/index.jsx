@@ -4,7 +4,7 @@ import {BsChevronDown} from 'react-icons/bs'
 export const Why = () => {
   return (
     <div className={Styles.container}>
-      <div>
+      <div className={Styles.info}>
         <p>Why us?</p>
       </div>
       <div>

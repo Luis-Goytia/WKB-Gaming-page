@@ -5,10 +5,12 @@ import { ClubEsport } from './ClubEsport';
 import { EsportConsulting } from './EsportConsulting';
 import { EsportDigital } from './EsportDigital';
 import { EventManagement } from './EventManagement';
+import { Navbar } from '../Navbar';
+import { Footer } from '../../Home/Footer';
 export const EsportServices = () => {
   var settings = {
     className: 'slider variable-width',
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -16,6 +18,7 @@ export const EsportServices = () => {
   };
   return (
     <div>
+      <Navbar/>
       <div>
         <h1>e-Sport Services</h1>
       </div>
@@ -36,7 +39,9 @@ export const EsportServices = () => {
             <EventManagement />
           </div>
         </Slider>
+        <br />
       </div>
+      <Footer/>
     </div>
   );
 };

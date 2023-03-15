@@ -5,11 +5,13 @@ import { MobileApp } from "./MobileApp";
 import { ProductDesign } from "./ProductDesign";
 import { WebEcomerce } from "./WebEcomerce";
 import Styles from "./AppGames.module.css";
+import { Footer } from "../../Home/Footer";
+import { Navbar } from "../Navbar";
 
 export const AppGames = () => {
   var settings = {
     className: "slider variable-width",
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -17,6 +19,7 @@ export const AppGames = () => {
   };
   return (
     <div>
+      <Navbar/>
       <div>
         <h1>App & Games Development</h1>
       </div>
@@ -37,7 +40,9 @@ export const AppGames = () => {
             <Game />
           </div>
         </Slider>
+        <br />
       </div>
+      <Footer/>
     </div>
   );
 };

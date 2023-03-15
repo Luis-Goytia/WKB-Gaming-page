@@ -1,12 +1,14 @@
 .sliderContainer{
-    width: 100%;
-    margin: 0;
+    max-width: 100%;
+    
 }
 
-.slide{
-    padding: 0 10px;
-}
-.slide img{
-    width: 95%;
+.slides2 img{
+    margin: 0 auto;
+    max-width: 95%;
     height:auto;
 }
+
+.info p{
+    font-size: 24px;
+   }
