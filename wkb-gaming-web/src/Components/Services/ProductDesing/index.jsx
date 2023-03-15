@@ -1,10 +1,41 @@
-import React from 'react';
-import Styles from './ProductDesing.module.css'
-
+import React from "react";
+import Slider from "react-slick";
+import { UI_UXDesing } from "./UI_UXDesing";
+import { StartupManagment } from "./StartupManagment";
+import { ProductInterface } from "./ProductInterface";
+import { Business } from "./Business";
 export const ProductDesing = () => {
-    return (
-        <div>
-          Services  
-        </div>
-    )
-}
+  var settings = {
+    className: "slider variable-width",
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+  };
+  return (
+    <div>
+      <div>
+        <h1>Digital Product Design</h1>
+      </div>
+      <br />
+      <div></div>
+      <div>
+        <Slider {...settings}>
+          <div>
+            <Business />
+          </div>
+          <div>
+            <UI_UXDesing />
+          </div>
+          <div>
+            <ProductInterface />
+          </div>
+          <div>
+            <StartupManagment />
+          </div>
+        </Slider>
+      </div>
+    </div>
+  );
+};

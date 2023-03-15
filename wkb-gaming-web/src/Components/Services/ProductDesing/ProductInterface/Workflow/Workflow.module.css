@@ -32,7 +32,7 @@ font-size: 22px;
 .text8{
     max-width: 900px;
 }
-.frame{
+.frame, .frame2,.frame3{
   border: 1px rgba(255, 255, 255) solid;
   border-radius: 8px;
   margin: 0 auto;
@@ -45,3 +45,10 @@ font-size: 22px;
     margin: 0 10px;
 }
 
+.frame2{
+    max-width: 300px;
+}
+
+.frame3{
+    max-width: 200px;
+}
