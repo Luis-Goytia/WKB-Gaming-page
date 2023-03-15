@@ -1,18 +1,18 @@
-import React from "react";
-import Game1 from "../../../../assets/Services/img/AppGames/Game/Game Development-min.png";
-import Game2 from "../../../../assets/Services/img/AppGames/Game/Game Development-1-min.png";
-import Game3 from "../../../../assets/Services/img/AppGames/Game/Game Development-2-min.png";
-import Game4 from "../../../../assets/Services/img/AppGames/Game/Game Development-3-min.png";
-import { Problem } from './Problem'
-import {Workflow} from './Workflow'
-import { KeyBenefits } from "./KeyBenefits";
-import Styles from './Game.module.css'
+import React from 'react';
+import Game1 from '../../../../assets/Services/img/AppGames/Game/Game Development-min.png';
+import Game2 from '../../../../assets/Services/img/AppGames/Game/Game Development-1-min.png';
+import Game3 from '../../../../assets/Services/img/AppGames/Game/Game Development-2-min.png';
+import Game4 from '../../../../assets/Services/img/AppGames/Game/Game Development-3-min.png';
+import { Problem } from './Problem';
+import { Workflow } from './Workflow';
+import { KeyBenefits } from './KeyBenefits';
+import Styles from './Game.module.css';
 export const Game = () => {
   return (
     <div className={Styles.component}>
       <div className={Styles.subtitle}>
         <h1>Game Development</h1>
-      </div >
+      </div>
       <br />
       <div className={Styles.description}>
         <p>
@@ -40,16 +40,15 @@ export const Game = () => {
       <br />
       <div>
         <div className={Styles.subtitle}>
-          <h2 >Problem</h2>
+          <h2>Problem</h2>
         </div>
-        <Problem/>
+        <Problem />
       </div>
       <div>
         <div className={Styles.subtitle}>
           <h2>How is our workflow</h2>
-          
         </div>
-        <Workflow/>
+        <Workflow />
       </div>
       <br />
       <div>
@@ -57,7 +56,8 @@ export const Game = () => {
           <h2>Key Benefits</h2>
         </div>
         <br />
-        <KeyBenefits/>
+        <Workflow />
+        <KeyBenefits />
       </div>
     </div>
   );

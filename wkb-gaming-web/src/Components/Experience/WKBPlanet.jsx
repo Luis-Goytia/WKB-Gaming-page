@@ -12,7 +12,7 @@ import {
 import { useLayoutEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { useFrame, useThree } from '@react-three/fiber';
-
+import Style from './WKBPlanet.module.css';
 export function WKBPlanet(props) {
   const { nodes, materials } = useGLTF('./Models/WKBPlanet.glb');
   return (
@@ -41,14 +41,10 @@ export function WKBPlanet(props) {
           material={materials['Apps']}
           position={[0, 0, 2.75]}
         >
-          <Html
-            scale={2}
-            distanceFactor={1}
-            transform
-            occlude
-            position={[0, 0, 0.25]}
-          >
-            <a href="/services/appgames">Applications</a>
+          <Html distanceFactor={1.5} occlude position={[0, 0, 0.25]}>
+            <div className={Style.Title}>
+              <a href="/services/appgames">Applications</a>
+            </div>
           </Html>
         </mesh>
         <mesh
@@ -58,14 +54,14 @@ export function WKBPlanet(props) {
           position={[2.75, 0, 0]}
         >
           <Html
-            scale={2}
-            distanceFactor={1}
-            transform
+            distanceFactor={1.5}
             occlude
-            position={[0.25, 0, 0]}
+            position={[0.25, 0.05, 0]}
             rotation={[0, Math.PI / 2, 0]}
           >
-            <a href="/services/ProductDesing">Product Design</a>
+            <div className={Style.Title}>
+              <a href="/services/ProductDesing">Product Design</a>
+            </div>
           </Html>
         </mesh>
         <mesh
@@ -75,14 +71,14 @@ export function WKBPlanet(props) {
           position={[0, 0, -2.75]}
         >
           <Html
-            scale={2}
-            distanceFactor={1}
-            transform
+            distanceFactor={1.5}
             occlude
             position={[0, 0, -0.25]}
             rotation={[0, -Math.PI / 1, 0]}
           >
-            <a href="/services/ProductDesing">e-Sports</a>
+            <div className={Style.Title}>
+              <a href="/services/EsportServices">eSports</a>
+            </div>
           </Html>
         </mesh>
         <mesh
@@ -92,21 +88,20 @@ export function WKBPlanet(props) {
           position={[-2.5, 0, 0]}
         >
           <Html
-            scale={2}
-            distanceFactor={1}
-            transform
+            distanceFactor={1.5}
             occlude
             position={[-0.4, 0, 0]}
             rotation={[0, -Math.PI / 2, 0]}
           >
-            <a href="/services/ProductDesing">Marketing & Communication</a>
+            <div className={Style.Title}>
+              <a href="/services/Marketing">Marketing & Communication</a>
+            </div>
           </Html>
         </mesh>
 
         <mesh
           geometry={nodes.Asteroids.geometry}
           material={materials['Asteroids']}
-          scale={0.925}
         />
         <mesh geometry={nodes.Bear.geometry} material={materials['Bear']} />
 

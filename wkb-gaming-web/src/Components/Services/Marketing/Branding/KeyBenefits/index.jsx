@@ -4,6 +4,7 @@ import { TbCrown } from 'react-icons/tb';
 import { BsStars } from 'react-icons/bs';
 
 import Styles from './KeyBenefits.module.css';
+
 export const KeyBenefits = () => {
   return (
     <div className={Styles.container}>
