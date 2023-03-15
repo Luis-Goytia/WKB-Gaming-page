@@ -7,20 +7,10 @@ import World from '../../Experience/World';
 export const Header = () => {
   return (
     <div>
-      <div>
-        <img src={Logo} alt="" />
-      </div>
-      <div>
-        <div>
-          <p>We make</p>
-        </div>
-        <div>
+      <div className="home">
+        <div className={Styles.World}>
           <World />
         </div>
-        <div>for you project</div>
-      </div>
-      <div>
-        <BsChevronDown />
       </div>
     </div>
   );
