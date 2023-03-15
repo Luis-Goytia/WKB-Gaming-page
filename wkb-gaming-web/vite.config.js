@@ -15,6 +15,7 @@ export default defineConfig({
     assetsDir: 'assets',
     sourcemap: true,
   },
-  esbuild: {
-  },
+  {
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
 });
