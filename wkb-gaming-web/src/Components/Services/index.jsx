@@ -14,6 +14,7 @@ export const Services = () => {
 
   return (
     <div>
+      <StaticSlider/>
     </div>
   );
 }

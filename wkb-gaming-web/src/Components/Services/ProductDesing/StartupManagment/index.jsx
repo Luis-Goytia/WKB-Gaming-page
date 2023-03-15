@@ -3,52 +3,55 @@ import StartupManagment1 from "../../../../assets/Services/img/ProductDesing/Sta
 import StartupManagment2 from "../../../../assets/Services/img/ProductDesing/StartupManagment/Startup Managment-1-min.png";
 import StartupManagment3 from "../../../../assets/Services/img/ProductDesing/StartupManagment/Startup Managment-2-min.png";
 import StartupManagment4 from "../../../../assets/Services/img/ProductDesing/StartupManagment/Startup Managment-3-min.png";
-
+import { Workflow } from "./Workflow";
+import { KeyBenefits } from "./KeyBenefits";
+import Styles from "./StartupManagment.module.css";
 export const StartupManagment = () => {
   return (
-    <div>
-      <div>
-        <h1>Mobile App Development</h1>
+    <div className={Styles.component}>
+      <div className={Styles.subtitle}>
+        <h1>Startup Managment</h1>
       </div>
-      <div>
+      <div className={Styles.description}>
         <p>
-          We help you to became an idea to real app using programming for your
-          project.
-        </p>
-        <p>
-          We set up the development process from scratch and take full
-          responsibility for the project risks: from timelines and budget to the
-          final software quality.
+          Business digitalization is the integration of technology that
+          transforms the way organizations operate across their different areas,
+          services and channels, with customers and other stakeholders. A true
+          digital transformation process goes beyond buying and using a new tool
+          or software; it requires an honest commitment from the entire
+          organization to evaluate, challenge and reconfigure business processes
+          at a path and pace that work for that company, their clients and their
+          suppliers
         </p>
       </div>
-      <div>
-        <div>
+      <div className={Styles.list_img}>
+        <div className={Styles.div1}>
           <img src={StartupManagment1} alt="StartupManagment1" />
         </div>
-        <div>
+        <div className={Styles.div2}>
           <img src={StartupManagment2} alt="StartupManagment2" />
         </div>
-        <div>
+        <div className={Styles.div3}>
           <img src={StartupManagment3} alt="StartupManagment3" />
         </div>
-        <div>
+        <div className={Styles.div4}>
           <img src={StartupManagment4} alt="StartupManagment4" />
         </div>
       </div>
+      <br />
       <div>
-        <div>
-          <h2>Problem</h2>
-        </div>
-      </div>
-      <div>
-        <div>
+        <div className={Styles.subtitle}>
           <h2>How is our workflow</h2>
         </div>
+        <br />
+        <Workflow />
       </div>
       <div>
-        <div>
+        <div className={Styles.subtitle}>
           <h2>Key Benefits</h2>
         </div>
+        <br />
+        <KeyBenefits />
       </div>
     </div>
   );
