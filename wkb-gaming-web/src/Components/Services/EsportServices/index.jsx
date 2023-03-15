@@ -5,6 +5,8 @@ import { ClubEsport } from './ClubEsport';
 import { EsportConsulting } from './EsportConsulting';
 import { EsportDigital } from './EsportDigital';
 import { EventManagement } from './EventManagement';
+import { Navbar } from '../Navbar';
+import { Footer } from '../../Home/Footer';
 export const EsportServices = () => {
   var settings = {
     className: 'slider variable-width',
@@ -16,6 +18,7 @@ export const EsportServices = () => {
   };
   return (
     <div>
+      <Navbar/>
       <div>
         <h1>e-Sport Services</h1>
       </div>
@@ -38,6 +41,7 @@ export const EsportServices = () => {
         </Slider>
         <br />
       </div>
+      <Footer/>
     </div>
   );
 };

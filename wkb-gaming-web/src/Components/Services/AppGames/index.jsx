@@ -5,6 +5,8 @@ import { MobileApp } from "./MobileApp";
 import { ProductDesign } from "./ProductDesign";
 import { WebEcomerce } from "./WebEcomerce";
 import Styles from "./AppGames.module.css";
+import { Footer } from "../../Home/Footer";
+import { Navbar } from "../Navbar";
 
 export const AppGames = () => {
   var settings = {
@@ -17,6 +19,7 @@ export const AppGames = () => {
   };
   return (
     <div>
+      <Navbar/>
       <div>
         <h1>App & Games Development</h1>
       </div>
@@ -39,6 +42,7 @@ export const AppGames = () => {
         </Slider>
         <br />
       </div>
+      <Footer/>
     </div>
   );
 };
