@@ -1,16 +1,16 @@
-import React from "react";
-import Styles from "./Marketing.module.css";
-import Slider from "react-slick";
-import { Branding } from "./Branding";
-import { ContentMarketing } from "./ContentMarketing";
-import { GraphicDesing } from "./GraphicDesing";
-import { SocialMedia } from "./SocialMedia";
-import { Footer } from "../../Home/Footer";
-import { Navbar } from "../../Services/Navbar";
+import React from 'react';
+import Styles from './Marketing.module.css';
+import Slider from 'react-slick';
+import { Branding } from './Branding';
+import { ContentMarketing } from './ContentMarketing';
+import { GraphicDesing } from './GraphicDesing';
+import { SocialMedia } from './SocialMedia';
+import { Footer } from '../../Home/Footer';
+import { Navbar } from '../../Services/Navbar';
 
 export const Marketing = () => {
   var settings = {
-    className: "slider variable-width",
+    className: 'slider variable-width',
     dots: false,
     infinite: true,
     slidesToShow: 1,
@@ -21,7 +21,7 @@ export const Marketing = () => {
     <div>
       <Navbar />
       <div>
-        <h1>e-Sport Services</h1>
+        <h1>Marketing & Comunication</h1>
       </div>
       <br />
       <div></div>
