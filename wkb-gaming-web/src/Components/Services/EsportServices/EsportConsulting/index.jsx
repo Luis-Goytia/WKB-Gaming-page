@@ -28,6 +28,7 @@ export const EsportConsulting = () => {
           through the organizations that drive it.
         </p>
       </div>
+      <br />
       <div className={Styles.list_img}>
         <div className={Styles.div1} >
           <img src={Consulting1} alt="Consulting1" />
