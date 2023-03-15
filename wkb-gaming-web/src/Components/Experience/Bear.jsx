@@ -2,6 +2,7 @@ import { useGLTF, useScroll } from '@react-three/drei';
 import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { useFrame } from '@react-three/fiber';
+import React from 'react';
 
 export const FLOOR_HEIGHT = 2.3;
 export const NB_FLOORS = 3;

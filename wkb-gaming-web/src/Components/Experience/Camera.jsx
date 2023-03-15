@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { useSpring, a } from '@react-spring/three';
+import React from 'react';
 
 export default function Camera() {
   const { nodes, materials } = useGLTF('/level-react-draco.glb');
