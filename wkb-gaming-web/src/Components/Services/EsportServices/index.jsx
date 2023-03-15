@@ -1,13 +1,13 @@
 import React from 'react';
-import Styles from './EsportServices.module.css'
-import Slider from 'react-slick'
-import { ClubEsport } from './ClubEsport'
-import { EsportConsulting } from './EsportConsulting'
-import { EsportDigital } from './EsportDigital'
-import {EventManagement} from './EventManagement'
-export const EsportServices  = () => {
+import Styles from './EsportServices.module.css';
+import Slider from 'react-slick';
+import { ClubEsport } from './ClubEsport';
+import { EsportConsulting } from './EsportConsulting';
+import { EsportDigital } from './EsportDigital';
+import { EventManagement } from './EventManagement';
+export const EsportServices = () => {
   var settings = {
-    className: "slider variable-width",
+    className: 'slider variable-width',
     dots: true,
     infinite: true,
     slidesToShow: 1,
@@ -17,14 +17,14 @@ export const EsportServices  = () => {
   return (
     <div>
       <div>
-        <h1>Esport Services</h1>
+        <h1>e-Sport Services</h1>
       </div>
       <br />
       <div></div>
       <div>
         <Slider {...settings}>
           <div>
-            <EsportConsulting/>
+            <EsportConsulting />
           </div>
           <div>
             <ClubEsport />
@@ -38,5 +38,5 @@ export const EsportServices  = () => {
         </Slider>
       </div>
     </div>
-    )
-}
+  );
+};
