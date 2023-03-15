@@ -4,11 +4,18 @@ import AppsGames from '../../assets/Services/Gems/AppsGames.svg';
 import Esport from '../../assets/Services/Gems/Esport.svg';
 import Marketing from '../../assets/Services/Gems/Marketing.svg';
 import ProductDesing from '../../assets/Services/Gems/ProductDesing.svg';
+import { Footer } from '../Home/Footer';
+import {Navbar} from '../Services/Navbar'
 
 export const Services = () => {
-  return <MultipleItems />;
+  return (
+    <div>
+      <div><Navbar/></div>
+      <Footer/>
+    </div>
+  );
 };
-export default class MultipleItems extends Component {
+/* export default class MultipleItems extends Component {
   render() {
     const settings = {
       infinite: true,
@@ -36,3 +43,4 @@ export default class MultipleItems extends Component {
     );
   }
 }
+ */
