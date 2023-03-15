@@ -10,7 +10,7 @@ export const ClubEsport = () => {
   return (
     <div className={Styles.component}>
       <div className={Styles.subtitle}>
-        <h1>Mobile App Development</h1>
+        <h1>Club Esport Development</h1>
       </div>
       <div className={Styles.description}>
         <p>
