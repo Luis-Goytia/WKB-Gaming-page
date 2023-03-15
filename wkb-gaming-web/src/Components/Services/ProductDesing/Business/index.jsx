@@ -46,6 +46,7 @@ export const Business = () => {
         <div className={Styles.subtitle}>
           <h2>How is our workflow</h2>
         </div>
+        <br />
         <Workflow />
       </div>
       <br />
@@ -53,6 +54,7 @@ export const Business = () => {
         <div className={Styles.subtitle}>
           <h2>Key Benefits</h2>
         </div>
+        <br />
         <KeyBenefits />
       </div>
     </div>

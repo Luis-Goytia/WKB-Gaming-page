@@ -15,7 +15,7 @@ export const Workflow = () => {
           transformation accordingly
         </p>
       </div>
-
+<br />
       <div>
         <table>
           <tr>
@@ -53,11 +53,13 @@ export const Workflow = () => {
             </td>
           </tr>
         </table>
+        <br />
       </div>
 
       <div className={Styles.subtitle}>
         <h5>2 – Implementation</h5>
       </div>
+      <br />
       <div className={Styles.text8}>
         <p>
           Digital transformation is like redesigning an airplane with many
@@ -66,7 +68,7 @@ export const Workflow = () => {
           transformation correctly involves multiple steps:
         </p>
       </div>
-
+<br />
       <div>
         <table>
           <tr>
@@ -103,7 +105,7 @@ export const Workflow = () => {
           </tr>
         </table>
       </div>
-
+<br />
       <div className={Styles.subtitle}>
         <h5>3 – Acceleration</h5>
       </div>
@@ -115,6 +117,7 @@ export const Workflow = () => {
           typically involves the following:
         </p>
       </div>
+      <br />
 
       <div>
         <table>
@@ -159,6 +162,7 @@ export const Workflow = () => {
           of your strategy.
         </p>
       </div>
+      <br />
 
       <div>
         <table>
