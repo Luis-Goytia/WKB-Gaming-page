@@ -17,6 +17,7 @@ import Vw from "../../../assets/HOME/PARTNERS LOGOS/VW.png";
 export const Brands = () => {
   return (
     <div>
+      <br />
       <ul className={Styles.parnertsList}>
         <li>
           <img src={Oniria} alt="Oniria" />
