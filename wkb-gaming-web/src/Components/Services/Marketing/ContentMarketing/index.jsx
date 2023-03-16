@@ -15,10 +15,10 @@ export const ContentMarketing = () => {
       <div>
         <p>
           Our content marketing experts and graphic designers help alleviate
-          stress with our content marketing services. We offer graphic design,
-          email marketing, copywriting capabilities and a full range of standard
-          and customizable content services to handle your needs or support your
-          own team’s demands.
+          stress with our content marketing services.
+          <br /> We offer graphic design, email marketing, copywriting
+          capabilities and a full range of standard and customizable content
+          services to handle your needs or support your own team’s demands.
         </p>
       </div>
       <div className={Styles.list_img}>
